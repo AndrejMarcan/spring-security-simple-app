@@ -9,5 +9,6 @@ import com.andy.helloworld.repository.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer>{
+	//required method for this example
 	Optional<User> findByUsername(String username);
 }
